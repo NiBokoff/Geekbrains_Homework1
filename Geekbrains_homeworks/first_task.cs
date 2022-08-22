@@ -13,6 +13,7 @@
                 Console.WriteLine("Второе число " + num_B + " больше, чем первое " + num_A);
             }
             break;
+
             // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
             int num_1 = Convert.ToInt32(Console.ReadLine());
@@ -48,3 +49,31 @@
             }
             break;
 
+            // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+            int i = 1;
+            bool not = true;
+
+            num = Convert.ToInt32(Console.ReadLine());
+
+            while (i <= num)
+            {
+                if (i % 2 != 1)
+                {
+                    Console.Write(i + ", ");
+                    not = false;
+                }
+                i++;
+            }
+
+            if (not)
+            {
+                Console.WriteLine("Нет чётных чисел!");
+            }
+            break;
+
+        default:
+            begin = false;
+            break;
+    }
+}
